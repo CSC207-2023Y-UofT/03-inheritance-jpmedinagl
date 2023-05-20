@@ -12,11 +12,11 @@ public class HandBag extends Bag{
      * Creates a new HandBag with the given color and
      * capacity.
      *
-     * @param color
-     * @param capacity
+     * @param color the color of the bag
+     * @param capacity the capacity of thhe bag
      */
     public HandBag(String color, int capacity) {
-        /**
+        /*
          * This is how we call the parent's constructor
          * The Python equivalent is super().__init__(...)
          */
