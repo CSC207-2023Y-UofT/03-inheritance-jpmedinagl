@@ -29,6 +29,12 @@ public abstract class Bag {
      * its contents.)
      */
 
+    /**
+     * Creates a new Bag with the given color and capacity.
+     *
+     * @param color the color of this bag
+     * @param capacity the capacity of the bag
+     */
     public Bag(String color, int capacity) {
         this.color = color;
         this.numberOfContents = 0;
@@ -45,10 +51,20 @@ public abstract class Bag {
      *           - getCapacity
      */
 
+    /**
+     * Returns the color of the bag.
+     *
+     * @return string with the color
+     */
     public String getColor() {
         return this.color;
     }
 
+    /**
+     * Returns an integer of the number of items in the bag.
+     *
+     * @return an integer of the number of contents
+     */
     public int getNumberOfContents() {
         return this.numberOfContents;
     }
@@ -62,6 +78,11 @@ public abstract class Bag {
      *       color of this bag to the given color.
      */
 
+    /**
+     * Change the color of the bag with the new color.
+     *
+     * @param color the new color of the bag
+     */
     public void setColor(String color) {
         this.color = color;
     }
@@ -77,6 +98,13 @@ public abstract class Bag {
      *       and false otherwise.
      */
 
+    /**
+     * Takes in an item and adds it to the bag if there is enough
+     * space to add the item to the bag.
+     *
+     * @param item the string to be added to the bag
+     * @return boolean whether the item was added or not
+     */
     public boolean addItem(String item) {
         if (this.numberOfContents < this.capacity) {
             this.contents[numberOfContents] = item;
